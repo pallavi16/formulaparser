@@ -1,0 +1,59 @@
+{
+  "parser": [
+    {
+      "id": 1,
+      "formula": "a+b+2+x"
+    },
+    {
+      "id": 2,
+      "formula": "c+d+v"
+    },
+    {
+      "id": 3,
+      "formula": "2*x+y-z"
+    },
+    {
+      "id": 4,
+      "formula": "a/d*f+5"
+    },
+    {
+      "id": 5,
+      "formula": "5*x/y"
+    },
+    {
+      "data": [
+        {
+          "id": 1,
+          "formula": "a+b+2+x"
+        },
+        {
+          "id": 2,
+          "formula": "c+d+v"
+        },
+        {
+          "id": 3,
+          "formula": "2*x+y-z"
+        },
+        {
+          "id": 4,
+          "formula": "a/d*f+5"
+        },
+        {
+          "id": 5,
+          "formula": "5*x/y"
+        }
+      ],
+      "values": {
+        "a": "56",
+        "b": "22",
+        "x": "122"
+      },
+      "result": [
+        81,
+        92,
+        202
+      ],
+      "id": 6
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "parser": [
+    {
+      "formula": "a+b+2+x",
+      "id": 1
+    },
+    {
+      "formula": "c+d+v",
+      "id": 2
+    },
+    {
+      "formula": "2*x+y-z",
+      "id": 3
+    },
+    {
+      "formula": "a/d*f+5",
+      "id": 4
+    },
+    {
+      "formula": "5*x/y",
+      "id": 5
+    }
+  ]
+}
