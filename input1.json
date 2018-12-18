@@ -19,6 +19,216 @@
     {
       "formula": "5*x/y",
       "id": 5
-    }
+    },
+    [
+      {
+        "formula": "a+b+2+x",
+        "id": 1
+      },
+      {
+        "formula": "c+d+v",
+        "id": 2,
+        "values": {
+          "a": "1",
+          "b": "3",
+          "x": "4"
+        },
+        "result": [
+          10
+        ]
+      },
+      {
+        "formula": "2*x+y-z",
+        "id": 3
+      },
+      {
+        "formula": "a/d*f+5",
+        "id": 4
+      },
+      {
+        "formula": "5*x/y",
+        "id": 5
+      }
+    ],
+    [
+      {
+        "formula": "a+b+2+x",
+        "id": 1
+      },
+      {
+        "formula": "c+d+v",
+        "id": 2,
+        "values": {
+          "a": "2",
+          "b": "5",
+          "x": "7"
+        },
+        "result": [
+          16
+        ]
+      },
+      {
+        "formula": "2*x+y-z",
+        "id": 3
+      },
+      {
+        "formula": "a/d*f+5",
+        "id": 4
+      },
+      {
+        "formula": "5*x/y",
+        "id": 5
+      },
+      [
+        {
+          "formula": "a+b+2+x",
+          "id": 1
+        },
+        {
+          "formula": "c+d+v",
+          "id": 2,
+          "values": {
+            "a": "1",
+            "b": "3",
+            "x": "4"
+          },
+          "result": [
+            10
+          ]
+        },
+        {
+          "formula": "2*x+y-z",
+          "id": 3
+        },
+        {
+          "formula": "a/d*f+5",
+          "id": 4
+        },
+        {
+          "formula": "5*x/y",
+          "id": 5
+        }
+      ]
+    ],
+    [
+      {
+        "formula": "a+b+2+x",
+        "id": 1
+      },
+      {
+        "formula": "c+d+v",
+        "id": 2,
+        "values": {
+          "a": "12",
+          "b": "2",
+          "x": "2"
+        },
+        "result": [
+          18
+        ]
+      },
+      {
+        "formula": "2*x+y-z",
+        "id": 3
+      },
+      {
+        "formula": "a/d*f+5",
+        "id": 4
+      },
+      {
+        "formula": "5*x/y",
+        "id": 5
+      },
+      [
+        {
+          "formula": "a+b+2+x",
+          "id": 1
+        },
+        {
+          "formula": "c+d+v",
+          "id": 2,
+          "values": {
+            "a": "1",
+            "b": "3",
+            "x": "4"
+          },
+          "result": [
+            10
+          ]
+        },
+        {
+          "formula": "2*x+y-z",
+          "id": 3
+        },
+        {
+          "formula": "a/d*f+5",
+          "id": 4
+        },
+        {
+          "formula": "5*x/y",
+          "id": 5
+        }
+      ],
+      [
+        {
+          "formula": "a+b+2+x",
+          "id": 1
+        },
+        {
+          "formula": "c+d+v",
+          "id": 2,
+          "values": {
+            "a": "2",
+            "b": "5",
+            "x": "7"
+          },
+          "result": [
+            16
+          ]
+        },
+        {
+          "formula": "2*x+y-z",
+          "id": 3
+        },
+        {
+          "formula": "a/d*f+5",
+          "id": 4
+        },
+        {
+          "formula": "5*x/y",
+          "id": 5
+        },
+        [
+          {
+            "formula": "a+b+2+x",
+            "id": 1
+          },
+          {
+            "formula": "c+d+v",
+            "id": 2,
+            "values": {
+              "a": "1",
+              "b": "3",
+              "x": "4"
+            },
+            "result": [
+              10
+            ]
+          },
+          {
+            "formula": "2*x+y-z",
+            "id": 3
+          },
+          {
+            "formula": "a/d*f+5",
+            "id": 4
+          },
+          {
+            "formula": "5*x/y",
+            "id": 5
+          }
+        ]
+      ]
+    ]
   ]
 }
