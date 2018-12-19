@@ -3,7 +3,6 @@ import './ParseFormula.css';
 import Axios from 'axios';
 
 
-
 class ParseFormula extends Component {
 
   state = {
@@ -39,15 +38,15 @@ componentDidMount() {
  handleChange(event){
     event.preventDefault();
     let formValues= this.state.formValues;
+          console.log("FORM VALUES: "+ formValues);
     let name = event.target.name;
+      console.log("NAME: "+ name);
+    let id = event.target.id;
+    console.log("ID: "+ id);
     let value = event.target.value;
     formValues[name] = value;
 
     this.setState({formValues: formValues});
-
-     formValues = JSON.stringify(this.state.formValues);
-    console.log("STRINGIFIED VALS: "+ formValues);
-
   }
 
 
@@ -55,10 +54,17 @@ handleClick(event){
 
 console.log("inside fetch");
 event.preventDefault();
-
-
+/*
+let obj = array.find(x => x.name === 'string 1');
+let index = array.indexOf(obj);
+array.fill(obj.name='some new string', index, index++);*/
 var data = this.state.data;
+var data_formula = data.find (x => Object.values(x.formula));
+console.log("DATA FORMULA: "+ JSON.stringify(data_formula));
+alert(JSON.stringify(data_formula));
 var values= this.state.formValues;
+var val_key = Object.keys(values);
+console.log("VAAL KEY: "+ val_key);
 var result = this.state.result;
 var obj;
 
@@ -72,9 +78,8 @@ fetch('./input1.json')
       obj[object]["values"] = values;
       obj[object]["result"] = result;
       }
-
-      }
-    )
+    }
+  )
 
     this.writeJSON(obj);
 })
@@ -92,7 +97,6 @@ writeJSON(formData){
     headers: new Headers({
         "Accept": 'application/json',
         "Content-type": "application/json"
-        //"Content-type": "application/json; raw"
     }),
 }).then(res => res.json())
     .then( res =>{
@@ -114,6 +118,7 @@ writeJSON(formData){
     console.log("this state form values");
     console.log(characters);
     var s = formula;
+
    
     if(s !== undefined){
     s = s.replace(escapeRE, m => characters[m]);
@@ -128,14 +133,11 @@ writeJSON(formData){
     return (
         <div>
           <h4>Result:{result}</h4>
-
         </div>
       )
   
 }
 }
-
-
 
   doArithmetic(arithmetic){
     
@@ -174,7 +176,6 @@ writeJSON(formData){
             <div key={idx}>
             {
             array.toString().split(',').map(item =>(
-             
                 <span>
                   <label htmlFor={idx}> {item}:&nbsp;&nbsp;&nbsp;&nbsp; 
                    <input type="number" name={item} id={idx} placeholder= {item} value={this.state.formValues[item] || ''}  
@@ -245,10 +246,6 @@ writeJSON(formData){
 }
   
 
-
-
-
-
 render() {
     const { isLoading, data} = this.state;
 
@@ -277,7 +274,7 @@ render() {
             <p>Loading...</p>
           )}
         </div>
-      <button onClick={this.handleClick.bind(this)}> ADD
+      <button className="btn submit" onClick={this.handleClick.bind(this)}> ADD
       </button>
       </div>
       </React.Fragment>

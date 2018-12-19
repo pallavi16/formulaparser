@@ -3,8 +3,6 @@ import { mount, shallow } from 'enzyme';
 import { create } from "react-test-renderer";
 import ParseFormula from './ParseFormula';
 import Axios from 'axios';
-import { expect } from 'chai'
-import sinon from 'sinon'
 
 
 
@@ -27,7 +25,7 @@ it('should fetch data', async () => {
       const props = { get: Promise.resolve('data') };
       const shallowWrapper = shallow(<ParseFormula {...props}/>);
       await props.get;
-      expect(shallowWrapper.html()).toBe("<div class=\"calculater-container\"><h2>Formula</h2><div><p>Loading...</p></div><button> ADD</button></div>");
+      expect(shallowWrapper.html()).toBe("<div class=\"calculater-container\"><h2>Formula</h2><div><p>Loading...</p></div><button class=\"btn submit\"> ADD</button></div>");
    });
 });
 
@@ -43,12 +41,3 @@ describe("Formulas component", () => {
     await instance.componentDidMount();
   });
 });
-
-describe('Formula component', () => {
-  it('should call handleClick() when clicked', () => {
-    const spy = sinon.spy(ParseFormula.prototype, 'handleClick')
-    const wrapper = shallow(<ParseFormula />)
-    wrapper.find('div').simulate('click')      
-    expect(spy.calledOnce).to.equal(true)
-  })
-})

@@ -3,3 +3,21 @@
   height: var(--calculator-height);
   width: var(--calculator-width);
 }
+
+
+.submit{
+	border-color: #2196F3;
+  	color: dodgerblue;
+  	width: 90px;
+    height: 40px;
+    border-radius: 10px;
+
+}
+
+.submit:hover{
+	background: #2196F3;
+  	color: white;
+}
+
+
+	
